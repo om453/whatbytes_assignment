@@ -48,6 +48,34 @@ export default function Sidebar({ filters, setFilters }) {
         </div>
         <button onClick={handleSelect} className="mt-4 bg-white text-[#1651a6] font-bold rounded-lg py-2 px-4 hover:bg-blue-100 transition hover:cursor-pointer ">Select</button>
       </div>
+      {/* Cacyroy Card */}
+      <div className="bg-white rounded-2xl p-7 shadow-lg flex flex-col gap-6">
+        <div className="font-bold text-xl mb-2">Category</div>
+        <div className="mb-2">
+          <div className="flex flex-col gap-3 pl-1">
+            {['All', 'Electronics', 'Clothing', 'Home'].map((cat) => (
+              <label key={cat} className="flex items-center gap-3 text-base font-normal">
+                <input
+                  type="radio"
+                  name="Category"
+                  className="appearance-none w-5 h-5 border-2 border-blue-400 rounded-full checked:bg-white checked:border-blue-500 checked:ring-2 checked:ring-blue-500 focus:outline-none transition-all checked:cursor-pointer hover:cursor-pointer"
+                />
+                {cat}
+              </label>
+            ))}
+          </div>
+        </div>
+        <div className="mb-1">
+          <div className="font-bold text-base mb-2">Price</div>
+          <input
+            type="number"
+            min="0"
+            max="5000"
+            defaultValue="5000"
+            className="w-full rounded-lg px-3 py-2 border border-gray-200 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
     </aside>
   );
 } 

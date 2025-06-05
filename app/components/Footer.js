@@ -4,10 +4,10 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#0a3576] text-white mt-8">
-      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
-        <div className="w-full flex flex-col md:flex-row justify-center items-start md:items-center gap-12 md:gap-32">
+      <div className="max-w-7xl mx-auto px-4 pt-8 pb-0 flex flex-col">
+        <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-start gap-12 md:gap-0">
           {/* Filters */}
-          <div className="flex-1 flex flex-col items-center md:items-start">
+          <div className="flex-1 flex flex-col items-start">
             <div className="font-semibold mb-2 text-lg">Filters</div>
             <ul className="space-y-1 text-sm">
               <li>All</li>
@@ -17,7 +17,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* About Us */}
-          <div className="flex-1 flex flex-col items-center md:items-start">
+          <div className="flex-1 flex flex-col items-start">
             <div className="font-semibold mb-2 text-lg">About Us</div>
             <ul className="space-y-1 text-sm">
               <li>About Us</li>
@@ -25,7 +25,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* Follow Us */}
-          <div className="flex-1 flex flex-col items-center md:items-start">
+          <div className="flex-1 flex flex-col items-start">
             <div className="font-semibold mb-2 text-lg">Follow Us</div>
             <div className="flex space-x-4 mt-2">
               <a href="#" aria-label="Facebook" className="bg-blue-600 rounded-full p-3 flex items-center justify-center hover:bg-blue-700 transition"><Facebook className="w-5 h-5 text-white" /></a>
@@ -34,8 +34,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="w-full flex flex-col md:flex-row justify-between items-center border-t border-white/10 mt-6 py-2 text-xs">
+          <div className="text-left w-full md:w-auto">© 2024 American</div>
+        </div>
       </div>
-      <div className="text-center text-xs py-2 border-t border-white/10">© 2024 American</div>
     </footer>
   );
 } 
