@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WhatBytes Assignment
 
-## Getting Started
+A modern, responsive e-commerce product listing web app built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Check out the deployed app here:  
+👉 [https://whatbytes-assignment-omega.vercel.app/](https://whatbytes-assignment-omega.vercel.app/)
+
+---
+
+## 📦 Project Description
+
+This project is a fully functional product listing and filtering web application, designed as part of the WhatBytes assignment. It features:
+
+- **Product Grid:** Responsive grid layout for product cards with images, price, category, rating, and add-to-cart button.
+- **Sidebar Filters:** Filter products by category and price using an interactive sidebar.
+- **Extra Filter Card:** An additional "Category" card in the sidebar for UI completeness.
+- **Product Detail Page:** Click any product to view its details on a dedicated page.
+- **Footer:** Clean, consistent footer with navigation and social links.
+- **Image Management:** All product images are managed in the `public/images` folder for easy updates.
+- **Deployed on Vercel:** Easily accessible and shareable online.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+---
+
+## 📁 Folder Structure
+
+```
+/public/images         # All product images go here
+/app/components        # All React components (Sidebar, ProductGrid, Footer, etc.)
+/app/product/[id]      # Dynamic product detail pages
+/app/page.js           # Main page with sidebar and product grid
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🖼️ Adding/Updating Images
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Place your product images in the `public/images` folder.
+2. Make sure the filenames match the `image` property in your product data (e.g., `/images/shoes.png`).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 How to Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is deployed on Vercel:  
+[https://whatbytes-assignment-omega.vercel.app/](https://whatbytes-assignment-omega.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is for educational and assignment purposes.
