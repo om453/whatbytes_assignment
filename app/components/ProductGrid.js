@@ -3,14 +3,14 @@ import { useState } from "react";
 import Link from "next/link";
 
 export const products = [
-  { id: 1, title: "Running Shoes", price: 99, image: "/shoes.png", category: "Clothing", description: "Comfortable running shoes for daily use.", rating: 4.5 },
-  { id: 2, title: "Wireless Headphones", price: 199, image: "/headphones.png", category: "Electronics", description: "High-quality wireless headphones.", rating: 4 },
-  { id: 3, title: "Backpack", price: 129, image: "/backpack.png", category: "Clothing", description: "Spacious and durable backpack.", rating: 4 },
-  { id: 4, title: "Smartwatch", price: 249, image: "/watch.png", category: "Electronics", description: "Feature-rich smartwatch.", rating: 4.5 },
-  { id: 5, title: "Sunglasses", price: 149, image: "/sunglasses.png", category: "Clothing", description: "Stylish sunglasses for all seasons.", rating: 4 },
-  { id: 6, title: "Digital Camera", price: 499, image: "/camera.png", category: "Electronics", description: "Capture moments in high definition.", rating: 4.5 },
-  { id: 7, title: "T-shirt", price: 29, image: "/tshirt.png", category: "Clothing", description: "Soft and comfortable t-shirt.", rating: 4 },
-  { id: 8, title: "Smartphone", price: 699, image: "/phone.png", category: "Electronics", description: "Lorem ipsum dolor amet, consectetur eiusagend.", rating: 4.5 },
+  { id: 1, title: "Running Shoes", price: 99, image: "/images/runningshoes.png", category: "Clothing", description: "Comfortable running shoes for daily use.", rating: 4.5 },
+  { id: 2, title: "Normal Shoes", price: 199, image: "/images/normalshoes.png", category: "Clothing", description: "Noraml shoes for every day life.", rating: 4 },
+  { id: 3, title: "Backpack", price: 129, image: "/images/backpack.png", category: "Clothing", description: "Spacious and durable backpack.", rating: 4 },
+  { id: 4, title: "Smartwatch", price: 249, image: "/images/watch.png", category: "Electronics", description: "Feature-rich smartwatch.", rating: 4.5 },
+  { id: 5, title: "Sunglasses", price: 149, image: "/images/sunglasses.png", category: "Clothing", description: "Stylish sunglasses for all seasons.", rating: 4.5 },
+  { id: 6, title: "Digital Camera", price: 499, image: "/images/camera.png", category: "Electronics", description: "Capture moments in high definition.", rating: 4.5 },
+  { id: 7, title: "T-shirt", price: 29, image: "/images/tshirt.png", category: "Clothing", description: "Soft and comfortable t-shirt.", rating: 4 },
+  { id: 8, title: "Smartphone", price: 699, image: "/images/phone.png", category: "Electronics", description: "Lorem ipsum dolor amet, consectetur eiusagend.", rating: 4.5 },
 ];
 
 export function StarRating({ rating }) {
@@ -65,7 +65,7 @@ export default function ProductGrid({ filters = { category: "All", price: 1000 }
                 <div className="text-2xl font-bold mb-2">${product.price}</div>
                 <StarRating rating={product.rating} />
                
-                <button className=" bg-[#1762c4] text-white rounded-md px-4 py-3 font-bold text-lg hover:bg-blue-800 transition">Add to Cart</button>
+                <button className=" bg-[#1762c4] text-white rounded-md px-4 py-3 font-bold text-lg hover:bg-blue-800 transition hover:cursor-pointer">Add to Cart</button>
               </div>
             </Link>
           ))
